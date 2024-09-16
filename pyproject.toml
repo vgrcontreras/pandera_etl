@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "pandera-etl"
+version = "0.1.0"
+description = ""
+authors = ["Victor Contreras <contreras3991@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pandas = "^2.2.2"
+pandera = {extras = ["io"], version = "^0.20.4"}
+openpyxl = "^3.1.5"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

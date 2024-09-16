@@ -1,0 +1,40 @@
+import pandas as pd
+import pandera as pa
+from datetime import datetime, date
+from pandera.typing import Series, DataFrame
+
+class OutputSeaImpQuotesSchema(pa.DataFrameModel):
+    id: Series[int]
+    tipo_op: Series[str]
+    via: Series[str]
+    sucursal: Series[str]
+    estado: Series[str]
+    buque: Series[str]
+    ciudad: Series[str]
+    cargado: Series[datetime]
+    vigencia: Series[date]
+    vendedor: Series[str]
+    inside_sales: Series[str]
+    cnee: Series[str]
+    shipper: Series[str]
+    agente: Series[str]
+    cliente: Series[str]
+    pais_origen: Series[str]
+    ciudad_de_toma: Series[str]
+    pol: Series[str]
+    aeropuerto_salida: Series[str]
+    pod: Series[str]
+    destino: Series[str]
+    fechaaceptada: Series[date]
+    motivo: Series[str]
+    incoterms: Series[str]
+    notas: Series[str]
+    airtruck: Series[str]
+    seguro: Series[str]
+    peso: Series[float]
+    volumen: Series[float]
+    vol_taxable: Series[float]
+    carga_automatica: Series[str]
+    freight: Series[float]
+    teus: Series[int]
+
